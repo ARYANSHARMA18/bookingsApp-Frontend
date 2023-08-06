@@ -1,0 +1,365 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.listWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+}
+
+.listSearch {
+    flex: 1;
+    background-color: #febb02;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+}
+
+.lsTitle {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.lsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.lsItem>input{
+    font-size: 12px;
+}
+
+.lsItem>label {
+    height: 30px;
+    padding: 5px;
+    border: none;
+}
+
+.lsItem>span {
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lsOptions {
+    padding: 10px;
+}
+
+.lsOptionItem {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.lsOptionInput {
+    width: 50px;
+}
+
+.lsBtn {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #0071c2;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.listResult {
+    flex: 3;
+}
+
+.lrHeader {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+@media only screen and (min-width:768px) and (max-width:1030px) {
+    .listContainer {
+        box-sizing: border-box;
+        padding: 0px 10px 0px 10px;
+        margin-top: 70px;
+    }
+
+    .listWrapper {
+        gap: 18px;
+    }
+
+    .listSearch {
+        padding: 8px;
+        top: 10px;
+    }
+
+    .lsTitle {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .lsItem {
+        gap: 4.5px;
+        margin-bottom: 8px;
+    }
+
+    .lsItem>label {
+        height: 25px;
+        padding: 4.5px;
+        font-size: 1.5vw;
+    }
+
+    .lsItem>span {
+        height: 25px;
+        padding: 4.5px;
+        font-size: 1.5vw;
+    }
+
+    .lsOptions {
+        padding: 8px;
+    }
+
+    .lsOptionItem {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .lsOptionInput {
+        width: 45px;
+    }
+
+    .lsBtn {
+        padding: 8px;
+        font-size: 1.35vw;
+    }
+
+    .lrHeader {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width:767.5px) {
+    .listContainer {
+        box-sizing: border-box;
+        padding: 0px 10px 0px 10px;
+        margin-top: 10px;
+    }
+
+    .listWrapper {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .listSearch {
+        padding: 6px;
+        top: 10px;
+        position: static;
+    }
+
+    .lsTitle {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .lsItem {
+        gap: 4px;
+        margin-bottom: 6px;
+    }
+
+    .lsItem>label {
+        height: 20px;
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    .lsItem>span {
+        height: 20px;
+        padding: 4.5px;
+        font-size: 9px;
+    }
+
+    .lsOptions {
+        padding: 6px;
+        display: flex;
+        justify-content: space-between;
+        gap: 3px;
+    }
+    
+    .lsOptionItem {
+        font-size: 9.5px;
+        font-weight: 650;
+        margin-bottom: 8px;
+    }
+
+    .lsOptionInput {
+        width: 30px;
+        margin-left: 4px;
+    }
+
+    .lsBtn {
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    .lrHeader {
+        margin-top: 8px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:325px) and (max-width:425px){
+    .listContainer {
+        box-sizing: border-box;
+        padding: 0px 10px 0px 10px;
+        margin-top: 10px;
+    }
+
+    .listWrapper {
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .listSearch {
+        padding: 6px;
+        top: 10px;
+        position: static;
+    }
+
+    .lsTitle {
+        font-size: 13.5px;
+        margin-bottom: 4px;
+    }
+
+    .lsItem {
+        gap: 3px;
+        margin-bottom: 5px;
+    }
+
+    .lsItem>label {
+        height: 15px;
+        padding: 3px;
+        font-size: 9px;
+    }
+
+    .lsItem>span {
+        height: 15px;
+        padding: 3.5px;
+        font-size: 8px;
+    }
+
+    .lsOptions {
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5px;
+    }
+    
+    .lsOptionItem {
+        font-size: 7px;
+        margin-bottom: 6px;
+        font-weight: 650;
+    }
+
+    .lsOptionInput {
+        width: 22px;
+        font-size: 10px;
+        margin-left: 3px;
+    }
+
+    .lsBtn {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .lrHeader {
+        margin-top: 6px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:324px){
+    .listContainer {
+        box-sizing: border-box;
+        padding: 0px 10px 0px 10px;
+        margin-top: 8px;
+    }
+
+    .listWrapper {
+        gap: 6px;
+        flex-direction: column;
+    }
+
+    .listSearch {
+        padding: 4.5px;
+        top: 10px;
+        position: static;
+    }
+
+    .lsTitle {
+        font-size: 11px;
+        margin-bottom: 3px;
+    }
+
+    .lsItem {
+        gap: 2px;
+        margin-bottom: 4px;
+    }
+
+    .lsItem>label {
+        height: 10px;
+        padding: 3px;
+        font-size: 8px;
+    }
+
+    .lsItem>span {
+        height: 10px;
+        padding: 3.5px;
+        font-size: 7px;
+    }
+
+    .lsOptions {
+        padding: 3px;
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+    }
+    
+    .lsOptionItem {
+        font-size: 6px;
+        margin-bottom: 4px;
+        font-weight: 650;
+    }
+
+    .lsOptionInput {
+        width: 18px;
+        font-size: 8px;
+        margin-left: 2px;
+    }
+
+    .lsBtn {
+        padding: 4px;
+        font-size: 9px;
+    }
+
+    .lrHeader {
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+}

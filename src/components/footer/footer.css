@@ -1,0 +1,72 @@
+.footer{
+    width: 100%;
+    max-width: 1024px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.fLists{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 50px 0px;
+}
+
+.flist{
+    list-style: none;
+    padding: 0px;
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #003580;
+}
+
+@media only screen and (min-width:768px) and (max-width:1030px){
+    .footer{
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+
+    .flist{
+        list-style: none;
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width:767.5px){
+    .footer{
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+
+    .flist{
+        list-style: none;
+        padding: 0px 15px;
+    }
+}
+
+@media only screen and (min-width:325px) and (max-width:425px){
+    .footer{
+        font-size: 8px;
+        box-sizing: border-box;
+    }
+
+    .flist{
+        list-style: none;
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width:324px){
+    .footer{
+        font-size: 6px;
+        box-sizing: border-box;
+    }
+
+    .flist{
+        list-style: none;
+        padding: 0px 5px;
+    }
+}

@@ -1,0 +1,506 @@
+.searchItem {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.siImg {
+    height: 200px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.siDesc {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.siTitle {
+    color: #0071c2;
+    font-size: 21.5px;
+    cursor: pointer;
+}
+
+.siTitle:hover {
+    color: black;
+}
+
+.siManagedBy {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.siDistance {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.siSubtitle {
+    font-size: 13.5px;
+    margin-bottom: 10px;
+}
+
+.leafIcon {
+    margin-right: 5px;
+}
+
+.siFeature {
+    font-size: 12.5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.siCancelOp {
+    padding: 3px;
+    font-size: 12px;
+    width: max-content;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.siCancelSub {
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+    color: green;
+}
+
+.siDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.siRating {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.siRating>span {
+    font-weight: 550;
+}
+
+.siRating>button {
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+    padding: 5.5px;
+    border-radius: 6px 6px 6px 0px;
+    background-color: #003580;
+    border: none;
+    margin-left: 8px;
+}
+
+.siDeaitlsText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.siCal {
+    flex: 2;
+    font-size: 12px;
+    color: gray;
+}
+
+.siPrice {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.siTax {
+    font-size: 12px;
+}
+
+.siCheckBtn {
+    font-size: 14px;
+    color: white;
+    background-color: #0071c2;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.siCheckBtn:hover {
+    background-color: #003580;
+}
+
+.siBtnIcon {
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+@media only screen and (min-width:768px) and (max-width:1030px) {
+    .searchItem {
+        padding: 12px;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .siImg {
+        height: 145px;
+    }
+
+    .siTitle {
+        font-size: 16.5px;
+    }
+
+    .siManagedBy {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .siDistance {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .siSubtitle {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .leafIcon {
+        margin-right: 4px;
+    }
+
+    .siFeature {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .siCancelOp {
+        padding: 3px;
+        font-size: 10px;
+        margin-bottom: 4.5px;
+    }
+
+    .siCancelSub {
+        font-size: 9.5px;
+    }
+
+    .siRating>span {
+        font-weight: 550;
+        font-size: 1.5vw;
+    }
+
+    .siRating>button {
+        font-size: 11px;
+        padding: 5px;
+        margin-left: 7px;
+    }
+
+    .siDeaitlsText {
+        gap: 5px;
+    }
+
+    .siCal {
+        font-size: 10px;
+    }
+
+    .siPrice {
+        font-size: 15px;
+    }
+
+    .siTax {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .siCheckBtn {
+        font-size: 9.5px;
+        padding: 7px 14px;
+    }
+
+    .siBtnIcon {
+        margin-left: 8px;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width:767.5px){
+    .searchItem {
+        padding: 10px;
+        gap: 6px;
+        margin-bottom: 18px;
+    }
+
+    .siImg {
+        height: 115px;
+    }
+
+    .siTitle {
+        font-size: 14px;
+    }
+
+    .siManagedBy {
+        font-size: 8px;
+        margin-bottom: 7px;
+    }
+
+    .siDistance {
+        font-size: 8px;
+        margin-bottom: 7px;
+    }
+
+    .siSubtitle {
+        font-size: 8px;
+        margin-bottom: 7px;
+    }
+
+    .leafIcon {
+        margin-right: 3.5px;
+    }
+
+    .siFeature {
+        font-size: 8px;
+        margin-bottom: 7px;
+    }
+
+    .siCancelOp {
+        padding: 3px;
+        font-size: 8px;
+        margin-bottom: 4px;
+    }
+
+    .siCancelSub {
+        font-size: 7px;
+    }
+
+    .siRating>span {
+        font-weight: 550;
+        font-size: 1.5vw;
+    }
+
+    .siRating>button {
+        font-size: 8px;
+        padding: 3px;
+        margin-left: 6px;
+    }
+
+    .siDeaitlsText {
+        gap: 4px;
+    }
+
+    .siCal {
+        font-size: 9px;
+    }
+
+    .siPrice {
+        font-size: 12px;
+    }
+
+    .siTax {
+        font-size: 6.5px;
+        white-space: nowrap;
+    }
+
+    .siCheckBtn {
+        font-size: 7px;
+        padding: 7px 10px;
+    }
+
+    .siBtnIcon {
+        margin-left: 7px;
+        font-size: 7px;
+    }
+}
+
+@media only screen and (min-width:325px) and (max-width:425px){
+    .searchItem {
+        padding: 5px;
+        gap: 5px;
+        margin-bottom: 18px;
+    }
+
+    .siImg {
+        height: 70px;
+    }
+
+    .siTitle {
+        font-size: 10px;
+    }
+
+    .siManagedBy {
+        font-size: 6.5px;
+        margin-bottom: 7px;
+    }
+
+    .siDistance {
+        font-size: 6.5px;
+        margin-bottom: 7px;
+    }
+
+    .siSubtitle {
+        font-size: 5px;
+        margin-bottom: 7px;
+    }
+
+    .leafIcon {
+        margin-right: 3px;
+    }
+
+    .siFeature {
+        font-size: 6.5px;
+        margin-bottom: 7px;
+    }
+
+    .siCancelOp {
+        padding: 3px;
+        font-size: 5.5px;
+        margin-bottom: 4px;
+    }
+
+    .siCancelSub {
+        font-size: 5.5px;
+        font-weight: 650;
+    }
+
+    .siRating>span {
+        font-weight: 550;
+        font-size: 1.5vw;
+    }
+
+    .siRating>button {
+        font-size: 7px;
+        padding: 3px;
+        margin-left: 5px;
+    }
+
+    .siDeaitlsText {
+        gap: 4px;
+    }
+
+    .siCal {
+        font-size: 7px;
+    }
+
+    .siPrice {
+        font-size: 10px;
+    }
+
+    .siTax {
+        font-size: 5.5px;
+        white-space: nowrap;
+    }
+
+    .siCheckBtn {
+        font-size: 6px;
+        padding: 7px 5px;
+    }
+
+    .siBtnIcon {
+        margin-left: 4px;
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width:324px){
+    .searchItem {
+        padding: 3px;
+        gap: 3px;
+        margin-bottom: 18px;
+    }
+
+    .siImg {
+        height: 50px;
+    }
+
+    .siTitle {
+        font-size: 8px;
+    }
+
+    .siManagedBy {
+        font-size: 5.5px;
+        margin-bottom: 5px;
+    }
+
+    .siDistance {
+        font-size: 5.5px;
+        margin-bottom: 5px;
+    }
+
+    .siSubtitle {
+        font-size: 5.5px;
+        margin-bottom: 5px;
+    }
+
+    .leafIcon {
+        margin-right: 2px;
+        font-weight: 650;
+    }
+
+    .siFeature {
+        font-size: 5.5px;
+        margin-bottom: 4px;
+    }
+
+    .siCancelOp {
+        padding: 2.5px;
+        font-size: 4.5px;
+        margin-bottom: 3px;
+    }
+
+    .siCancelSub {
+        font-size: 4.5px;
+        font-weight: 650;
+    }
+
+    .siRating>span {
+        font-weight: 550;
+        font-size: 1.5vw;
+    }
+
+    .siRating>button {
+        font-size: 5px;
+        padding: 3px;
+        margin-left: 2px;
+    }
+
+    .siDeaitlsText {
+        gap: 2px;
+    }
+
+    .siCal {
+        font-size: 5.5px;
+    }
+
+    .siPrice {
+        font-size: 8px;
+    }
+
+    .siTax {
+        font-size: 5px;
+        white-space: nowrap;
+    }
+
+    .siCheckBtn {
+        font-size: 5px;
+        padding: 7px 4px;
+    }
+
+    .siBtnIcon {
+        margin-left: 3px;
+        font-size: 5px;
+    }
+}
